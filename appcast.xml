@@ -6,13 +6,13 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.1.0</title>
-            <pubDate>Mon, 09 Nov 2026 10:20:14 +0000</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <title>OnCue 1.2.0</title>
+            <pubDate>Mon, 09 Nov 2026 10:58:40 +0000</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.1.0 Release Notes</h2>
+                <h2>OnCue 1.2.0 Release Notes</h2>
                 <ul>
                     <li>Audio & Subtitle Lip-Sync Delay Adjustment (+/- 0.5s)</li>
                     <li>Smart IMDb Rating & Release Year Filters for Movies and Series</li>
@@ -29,10 +29,10 @@
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.1.0/OnCue.dmg"
-                length="7866509"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.0/OnCue.dmg"
+                length="8057530"
                 type="application/octet-stream"
-                sparkle:edSignature="42iihSa4kl18WgtjCpKsHg5B4CeLkH7W+QtmdHbp7NCdRg754OhIuv3ICOMBwU3Q7Eq7KEbAU3mHPdlIFB7HCA==" />
+                sparkle:edSignature="Nd7owSNovyrt51tS793MduX+unUvxea0pLoZH0Aw1G9mDACS/wtaPOlMbR10ey7Ryjz8biB3PrbNh/yOkjJiDg==" />
         </item>
     </channel>
 </rss>
