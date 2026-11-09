@@ -6,14 +6,19 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.2.0</title>
-            <pubDate>Mon, 09 Nov 2026 10:58:40 +0000</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <title>OnCue 1.2.1</title>
+            <pubDate>Mon, 09 Nov 2026 11:26:38 +0000</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.2.0 Release Notes</h2>
+                <h2>OnCue 1.2.1 Release Notes</h2>
                 <ul>
+                    <li>Smart Audio-Only & Live Radio Station Detection with Animated Equalizer Visualizer</li>
+                    <li>Automatic Video Recovery Engine: Seamless fallback to raw stream and VideoToolbox GPU transmuxing</li>
+                    <li>One-click external player launch (VLC Media Player / IINA) from top bar and recovery modals</li>
+                    <li>YouTube Official Trailer Modal with instant Safari companion fallback</li>
+                    <li>Multi-Account Management & Zero-interruption Auto-Failover Backup Engine</li>
                     <li>Audio & Subtitle Lip-Sync Delay Adjustment (+/- 0.5s)</li>
                     <li>Smart IMDb Rating & Release Year Filters for Movies and Series</li>
                     <li>VOD Offline Download Engine for Movies & Series episodes</li>
@@ -21,18 +26,14 @@
                     <li>Instant Highlight Clip & Animated GIF Exporter (C shortcut)</li>
                     <li>Apple AirPods Spatial Audio (Uzamsal Ses) Support</li>
                     <li>Cinematic Real-time Ambilight Glow Lighting Effect</li>
-                    <li>Native Picture-in-Picture (PiP) and lossless DVR recording</li>
-                    <li>Multi-View (Dual & Quad Screen) simultaneous player</li>
-                    <li>Encrypted hardware credential storage via Apple Keychain</li>
-                    <li>Full English & Turkish localization support</li>
                     <li>Universal 2: Native on Apple Silicon (M1/M2/M3/M4) & Intel Macs</li>
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.0/OnCue.dmg"
-                length="8057530"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.1/OnCue.dmg"
+                length="8157526"
                 type="application/octet-stream"
-                sparkle:edSignature="Nd7owSNovyrt51tS793MduX+unUvxea0pLoZH0Aw1G9mDACS/wtaPOlMbR10ey7Ryjz8biB3PrbNh/yOkjJiDg==" />
+                sparkle:edSignature="3YV2S9WFj/oSmdD8J/+CcH5ZkVJyE2oN7aQhVhD9eOhkfnt8s3wD+UYTP1iyNtjlRKNscUaUIOvKooyTEVvPBw==" />
         </item>
     </channel>
 </rss>
