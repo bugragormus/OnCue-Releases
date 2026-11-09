@@ -22,3 +22,4 @@ En son kararlı sürümü doğrudan indirin:
 
 ### Yasal Uyarı
 OnCue bir medya sağlayıcısı değildir ve hiçbir içerik barındırmaz. Kullanıcılar kendi Xtream Codes veya M3U servis sağlayıcı bilgileriyle bağlanırlar.
+
