@@ -1,25 +1,50 @@
-# OnCue - macOS Dağıtım & Sürümler
+# OnCue — Cinematic IPTV & Media Player for macOS
 
-OnCue, macOS için saf SwiftUI ve Apple AVKit ile sıfırdan geliştirilmiş, donanım hızlandırmalı sinematik IPTV ve medya oynatıcısıdır.
+**OnCue** is a modern, high-performance IPTV and media streaming application engineered from the ground up for macOS using native **Swift**, **SwiftUI**, and Apple's **AVKit**.
 
-## 🚀 İndirme & Kurulum
-En son kararlı sürümü doğrudan indirin:
-- **[OnCue.dmg (En Son Sürüm v1.0.0)](https://github.com/bugragormus/OnCue-Releases/releases/latest/download/OnCue.dmg)**
-
-### Sistem Gereksinimleri
-- macOS 13.0 (Ventura) veya daha yenisi (macOS Sonoma, Sequoia desteklenir)
-- Evrensel İkili (Universal 2): Apple Silicon (M1, M2, M3, M4) ve Intel işlemcili tüm Mac'lerle tam uyumlu.
-
-## 🌟 Öne Çıkan Özellikler
-- **4K HDR & HEVC:** Apple VideoToolbox ve Metal GPU donanım hızlandırması.
-- **Çoklu Ekran (Multi-View):** Aynı anda 2 veya 4 canlı yayını yan yana izleme ve tek tıkla ses odağı değiştirme.
-- **Akıllı EPG TV Rehberi:** Kanal logoları, anlık program ilerleme çubuğu ve sıradaki yayınlar.
-- **Ebeveyn Denetimi & Güvenlik:** Apple Keychain donanımsal şifreleme ve 4 haneli PIN kodu koruması.
-- **Türkçe & İngilizce:** Sistem diline tam uyumlu yerelleştirme.
-- **Sparkle 2 OTA:** Ed25519 kriptografik imzalı otomatik güncelleme desteği.
+Designed with a cinematic OLED-black visual aesthetic, OnCue delivers hardware-accelerated 4K 60fps HDR playback, an interactive Electronic Program Guide (EPG), simultaneous Multi-View streaming, and Apple Keychain security.
 
 ---
 
-### Yasal Uyarı
-OnCue bir medya sağlayıcısı değildir ve hiçbir içerik barındırmaz. Kullanıcılar kendi Xtream Codes veya M3U servis sağlayıcı bilgileriyle bağlanırlar.
+## 🚀 Download & Installation
 
+Download the latest signed Universal release:
+
+- **[Download OnCue.dmg (Latest Release v1.0.0)](https://github.com/bugragormus/OnCue-Releases/releases/latest/download/OnCue.dmg)**
+
+### Installation
+1. Open the downloaded `OnCue.dmg`.
+2. Drag and drop **OnCue** into your **Applications** folder.
+3. Launch OnCue from your Applications folder or Spotlight (`⌘ + Space`).
+
+### System Requirements
+- **Operating System:** macOS 13.0 (Ventura) or later (fully tested on macOS Sonoma & macOS Sequoia).
+- **Architecture:** Universal 2 Fat Binary (native on Apple Silicon M1 / M2 / M3 / M4 and Intel processors).
+
+---
+
+## 🌟 Key Features
+
+- **⚡️ Metal & VideoToolbox Hardware Acceleration:**  
+  Direct hardware decoding for 4K 60fps HDR and HEVC streams via Apple VideoToolbox. Ensures maximum battery efficiency and zero fan noise.
+
+- **📺 Multi-View Simultaneous Playback:**  
+  Watch 2 or 4 live streams side-by-side on a customizable split-screen matrix with one-click audio focus switching.
+
+- **📅 Interactive EPG TV Guide:**  
+  Apple TV-inspired TV Guide matrix with channel logos, real-time broadcast progress bars, time remaining, and "Up Next" schedules.
+
+- **🔒 Apple Keychain Encryption & Parental Controls:**  
+  User credentials are encrypted and stored in the secure macOS Keychain. Sensitive categories and adult channels are protected with an independent 4-digit parental PIN.
+
+- **🌐 Native Bilingual Support:**  
+  Full English and Turkish localization with automatic system-language detection or manual in-app selection.
+
+- **✨ Automatic Sparkle 2 Updates:**  
+  Over-the-air updates verified by cryptographic Ed25519 signatures, enabling effortless one-click updates.
+
+---
+
+## 🛡️ Legal & Privacy Disclaimer
+
+OnCue is an agnostic media player. It does not provide, host, bundle, or distribute any media content or channels. Users connect using their own legitimate Xtream Codes or M3U credentials obtained from authorized service providers.

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OnCue - macOS için Yeni Nesil Sinematik IPTV & Medya Oynatıcı</title>
-    <meta name="description" content="Apple Silicon ve Intel Mac'ler için yerel AVKit & SwiftUI ile geliştirilmiş, 4K HDR, EPG ve Çoklu Ekran destekli sinematik IPTV oynatıcısı.">
+    <title>OnCue — Cinematic IPTV & Media Player for macOS</title>
+    <meta name="description" content="Next-generation IPTV player engineered natively for macOS with Apple AVKit & SwiftUI. 4K HDR hardware acceleration, live EPG Guide, and Multi-View streaming.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -39,7 +39,6 @@
             background-attachment: fixed;
         }
 
-        /* Glass Container */
         .container {
             max-width: 1140px;
             margin: 0 auto;
@@ -48,13 +47,13 @@
 
         /* Header */
         header {
-            padding: 28px 0;
+            padding: 24px 0;
             border-bottom: 1px solid var(--border);
             backdrop-filter: blur(20px);
             position: sticky;
             top: 0;
             z-index: 100;
-            background: rgba(7, 7, 9, 0.8);
+            background: rgba(7, 7, 9, 0.85);
         }
 
         .nav-content {
@@ -92,7 +91,7 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 24px;
+            gap: 20px;
         }
 
         .nav-links a {
@@ -107,25 +106,52 @@
             color: #fff;
         }
 
+        /* Language Switcher */
+        .lang-switch {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 3px;
+            gap: 2px;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            background: rgba(255, 255, 255, 0.22);
+            color: #FFFFFF;
+        }
+
         .btn-header {
-            padding: 8px 16px;
+            padding: 8px 18px;
             font-size: 13px;
             font-weight: 600;
             border-radius: 999px;
-            background: rgba(255,255,255,0.1);
-            color: #fff;
-            border: 1px solid var(--border);
+            background: #FFFFFF;
+            color: #000000 !important;
             text-decoration: none;
             transition: all 0.2s;
         }
 
         .btn-header:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.85);
+            transform: translateY(-1px);
         }
 
         /* Hero */
         .hero {
-            padding: 96px 0 60px;
+            padding: 90px 0 60px;
             text-align: center;
             position: relative;
         }
@@ -157,7 +183,7 @@
             font-weight: 800;
             line-height: 1.1;
             letter-spacing: -1.5px;
-            max-width: 820px;
+            max-width: 860px;
             margin: 0 auto 20px;
             background: linear-gradient(180deg, #FFFFFF 30%, rgba(255,255,255,0.65) 100%);
             -webkit-background-clip: text;
@@ -167,7 +193,7 @@
         .hero p {
             font-size: 18px;
             color: var(--text-muted);
-            max-width: 640px;
+            max-width: 660px;
             margin: 0 auto 36px;
             font-weight: 400;
         }
@@ -229,7 +255,7 @@
             gap: 16px;
         }
 
-        /* App Mockup / Preview */
+        /* App Preview Window */
         .preview-window {
             margin: 20px auto 80px;
             background: rgba(18, 18, 22, 0.85);
@@ -302,7 +328,7 @@
             font-size: 14px;
         }
 
-        /* Features Grid */
+        /* Features */
         .features {
             padding: 60px 0;
         }
@@ -380,10 +406,11 @@
         }
 
         .disclaimer {
-            max-width: 640px;
+            max-width: 660px;
             margin: 16px auto 0;
             font-size: 11px;
             opacity: 0.6;
+            line-height: 1.6;
         }
 
         @media (max-width: 768px) {
@@ -406,9 +433,16 @@
                 <span class="brand-title">OnCue</span>
             </a>
             <div class="nav-links">
-                <a href="#features">Özellikler</a>
-                <a href="https://github.com/bugragormus/OnCue-Releases/releases" target="_blank">Sürümler</a>
-                <a href="https://github.com/bugragormus/OnCue-Releases/releases/latest/download/OnCue.dmg" class="btn-header">Mac için İndir</a>
+                <a href="#features" data-i18n="navFeatures">Features</a>
+                <a href="https://github.com/bugragormus/OnCue-Releases/releases" target="_blank" data-i18n="navReleases">Releases</a>
+                
+                <!-- Language Switcher Pill -->
+                <div class="lang-switch">
+                    <button class="lang-btn active" id="btn-en" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" id="btn-tr" onclick="setLanguage('tr')">TR</button>
+                </div>
+
+                <a href="https://github.com/bugragormus/OnCue-Releases/releases/latest/download/OnCue.dmg" class="btn-header" data-i18n="navDownload">Download for Mac</a>
             </div>
         </div>
     </header>
@@ -419,8 +453,8 @@
                 <div class="badge-dot"></div>
                 v1.0.0 Universal 2 (Apple Silicon & Intel)
             </div>
-            <h1>Mac İçin Geliştirilmiş Sinematik IPTV & Medya Deneyimi</h1>
-            <p>Saf SwiftUI ve Apple AVKit ile sıfırdan inşa edilmiş, 4K 60fps HDR hızlandırmalı, EPG rehberli ve çoklu ekran destekli yerel macOS oynatıcısı.</p>
+            <h1 data-i18n="heroTitle">Cinematic IPTV & Media Experience for Mac</h1>
+            <p data-i18n="heroSubtitle">Engineered natively from the ground up with Swift, SwiftUI, and Apple AVKit. Featuring 4K 60fps HDR acceleration, interactive EPG TV Guide, and simultaneous Multi-View streaming.</p>
             
             <div class="cta-group">
                 <a href="https://github.com/bugragormus/OnCue-Releases/releases/latest/download/OnCue.dmg" class="btn-primary">
@@ -429,19 +463,19 @@
                         <polyline points="7 10 12 15 17 10"></polyline>
                         <line x1="12" y1="15" x2="12" y2="3"></line>
                     </svg>
-                    OnCue'yu İndir (.dmg)
+                    <span data-i18n="ctaDownload">Download OnCue (.dmg)</span>
                 </a>
-                <a href="https://github.com/bugragormus/OnCue-Releases/releases" target="_blank" class="btn-secondary">
-                    Sürüm Notları
+                <a href="https://github.com/bugragormus/OnCue-Releases/releases" target="_blank" class="btn-secondary" data-i18n="ctaReleaseNotes">
+                    Release Notes
                 </a>
             </div>
 
             <div class="meta-info">
-                <span>✓ macOS 13+ (Ventura, Sonoma, Sequoia)</span>
+                <span data-i18n="metaOs">✓ macOS 13+ (Ventura, Sonoma, Sequoia)</span>
                 <span>•</span>
-                <span>✓ M1 / M2 / M3 / M4 & Intel Uyumlu</span>
+                <span data-i18n="metaArch">✓ M1 / M2 / M3 / M4 & Intel Macs</span>
                 <span>•</span>
-                <span>✓ Sparkle OTA Güncellemeleri</span>
+                <span data-i18n="metaSparkle">✓ Sparkle 2 Automatic Updates</span>
             </div>
 
             <!-- App Mockup Window -->
@@ -452,59 +486,59 @@
                         <div class="dot dot-yellow"></div>
                         <div class="dot dot-green"></div>
                     </div>
-                    <div class="window-title">OnCue — Sinematik Canlı TV, Film ve Dizi Oynatıcı</div>
+                    <div class="window-title">OnCue — Cinematic Live TV, Movies & Series Player</div>
                 </div>
                 <div class="app-inner">
                     <div class="app-overlay">
-                        <h3>Apple Standartlarında IPTV</h3>
-                        <p>Elektronik Program Rehberi (EPG), 4'lü Çoklu Ekran ve Akıllı Otomatik Yeniden Bağlanma</p>
+                        <h3 data-i18n="mockupHeading">Apple Standards in IPTV</h3>
+                        <p data-i18n="mockupDesc">Electronic Program Guide (EPG), 4-Stream Multi-View, and Smart Auto-Reconnect.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features -->
+        <!-- Features Grid -->
         <section id="features" class="features container">
             <div class="section-header">
-                <h2>Ödün Vermeyen macOS Mimarisi</h2>
-                <p>Web teknolojileri değil, donanım seviyesinde çalışan yerel Apple teknolojileri.</p>
+                <h2 data-i18n="featHeaderTitle">Uncompromising macOS Architecture</h2>
+                <p data-i18n="featHeaderSub">No web wrappers or Electron bloat. 100% native Apple technologies running directly on the hardware.</p>
             </div>
 
             <div class="grid">
                 <div class="card">
                     <div class="card-icon">⚡️</div>
-                    <h3>Metal & VideoToolbox</h3>
-                    <p>4K 60fps HDR ve HEVC akışları GPU üzerinde donanımsal olarak çözülür. Pil tasarrufu ve sıfır fan gürültüsü sağlar.</p>
+                    <h3 data-i18n="card1Title">Metal & VideoToolbox</h3>
+                    <p data-i18n="card1Desc">4K 60fps HDR and HEVC streams are hardware-decoded directly on your GPU, delivering whisper-quiet fans and maximum battery longevity.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon">📺</div>
-                    <h3>Çoklu Ekran (Multi-View)</h3>
-                    <p>Aynı anda 2 veya 4 canlı yayını yan yana izleyin. Maçlar ve haberler için tek tıkla ses odak değişimi yapın.</p>
+                    <h3 data-i18n="card2Title">Multi-View (Dual & Quad)</h3>
+                    <p data-i18n="card2Desc">Watch 2 or 4 live streams simultaneously on a high-definition split-screen grid. Toggle live audio focus with a single click.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon">📅</div>
-                    <h3>Akıllı EPG TV Rehberi</h3>
-                    <p>Kanal logoları, canlı yayın akışı, ilerleme çubukları ve sıradaki program bilgisiyle Apple TV tarzı kılavuz.</p>
+                    <h3 data-i18n="card3Title">Interactive EPG TV Guide</h3>
+                    <p data-i18n="card3Desc">Apple TV-inspired program grid featuring channel logos, real-time broadcast progress bars, remaining time, and upcoming schedules.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon">🔒</div>
-                    <h3>Keychain & Ebeveyn PIN</h3>
-                    <p>Xtream hesap şifreleriniz Apple Keychain donanım şifrelemesiyle saklanır. Yetişkin kategoriler 4 haneli PIN ile korunur.</p>
+                    <h3 data-i18n="card4Title">Keychain & Parental PIN</h3>
+                    <p data-i18n="card4Desc">Xtream credentials are encrypted with Apple Keychain hardware security. Sensitive categories are protected by a standalone 4-digit PIN.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon">🌐</div>
-                    <h3>Türkçe & İngilizce Destek</h3>
-                    <p>Uygulama genelinde macOS sistem diline tam uyumlu ya da elle seçilebilir iki dilli mimari.</p>
+                    <h3 data-i18n="card5Title">English & Turkish Support</h3>
+                    <p data-i18n="card5Desc">Fully localized across all menus, players, and modals, matching your macOS system language automatically or manually.</p>
                 </div>
 
                 <div class="card">
                     <div class="card-icon">✨</div>
-                    <h3>Sparkle Otomatik Güncelleme</h3>
-                    <p>Endüstri standardı Ed25519 şifreli Sparkle 2 motoru ile en yeni sürümler tek tıkla arka planda yüklenir.</p>
+                    <h3 data-i18n="card6Title">Sparkle Automatic Updates</h3>
+                    <p data-i18n="card6Desc">Industry-standard Sparkle 2 framework with Ed25519 cryptographic signatures keeps your app updated seamlessly over the air.</p>
                 </div>
             </div>
         </section>
@@ -512,11 +546,101 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 OnCue Player. Tüm hakları saklıdır. macOS için gururla geliştirilmiştir.</p>
-            <p class="disclaimer">Yasal Uyarı: OnCue hiçbir medya içeriği barındırmaz veya yayınlamaz. Kullanıcılar kendi yasal Xtream Codes veya M3U abonelik bilgileriyle bağlanırlar.</p>
+            <p data-i18n="footerCopy">© 2026 OnCue Player. All rights reserved. Crafted natively for macOS.</p>
+            <p class="disclaimer" data-i18n="footerDisclaimer">Legal Disclaimer: OnCue is an agnostic media player. It does not provide, host, bundle, or distribute any media content or channels. Users connect using their own legitimate Xtream Codes or M3U credentials.</p>
         </div>
     </footer>
 
+    <!-- Instantaneous Bilingual Localization Script -->
+    <script>
+        const i18n = {
+            en: {
+                navFeatures: "Features",
+                navReleases: "Releases",
+                navDownload: "Download for Mac",
+                heroTitle: "Cinematic IPTV & Media Experience for Mac",
+                heroSubtitle: "Engineered natively from the ground up with Swift, SwiftUI, and Apple AVKit. Featuring 4K 60fps HDR acceleration, interactive EPG TV Guide, and simultaneous Multi-View streaming.",
+                ctaDownload: "Download OnCue (.dmg)",
+                ctaReleaseNotes: "Release Notes",
+                metaOs: "✓ macOS 13+ (Ventura, Sonoma, Sequoia)",
+                metaArch: "✓ M1 / M2 / M3 / M4 & Intel Macs",
+                metaSparkle: "✓ Sparkle 2 Automatic Updates",
+                mockupHeading: "Apple Standards in IPTV",
+                mockupDesc: "Electronic Program Guide (EPG), 4-Stream Multi-View, and Smart Auto-Reconnect.",
+                featHeaderTitle: "Uncompromising macOS Architecture",
+                featHeaderSub: "No web wrappers or Electron bloat. 100% native Apple technologies running directly on the hardware.",
+                card1Title: "Metal & VideoToolbox",
+                card1Desc: "4K 60fps HDR and HEVC streams are hardware-decoded directly on your GPU, delivering whisper-quiet fans and maximum battery longevity.",
+                card2Title: "Multi-View (Dual & Quad)",
+                card2Desc: "Watch 2 or 4 live streams simultaneously on a high-definition split-screen grid. Toggle live audio focus with a single click.",
+                card3Title: "Interactive EPG TV Guide",
+                card3Desc: "Apple TV-inspired program grid featuring channel logos, real-time broadcast progress bars, remaining time, and upcoming schedules.",
+                card4Title: "Keychain & Parental PIN",
+                card4Desc: "Xtream credentials are encrypted with Apple Keychain hardware security. Sensitive categories are protected by a standalone 4-digit PIN.",
+                card5Title: "English & Turkish Support",
+                card5Desc: "Fully localized across all menus, players, and modals, matching your macOS system language automatically or manually.",
+                card6Title: "Sparkle Automatic Updates",
+                card6Desc: "Industry-standard Sparkle 2 framework with Ed25519 cryptographic signatures keeps your app updated seamlessly over the air.",
+                footerCopy: "© 2026 OnCue Player. All rights reserved. Crafted natively for macOS.",
+                footerDisclaimer: "Legal Disclaimer: OnCue is an agnostic media player. It does not provide, host, bundle, or distribute any media content or channels. Users connect using their own legitimate Xtream Codes or M3U credentials."
+            },
+            tr: {
+                navFeatures: "Özellikler",
+                navReleases: "Sürümler",
+                navDownload: "Mac için İndir",
+                heroTitle: "Mac İçin Geliştirilmiş Sinematik IPTV & Medya Deneyimi",
+                heroSubtitle: "Saf SwiftUI ve Apple AVKit ile sıfırdan inşa edilmiş, 4K 60fps HDR hızlandırmalı, EPG rehberli ve çoklu ekran destekli yerel macOS oynatıcısı.",
+                ctaDownload: "OnCue'yu İndir (.dmg)",
+                ctaReleaseNotes: "Sürüm Notları",
+                metaOs: "✓ macOS 13+ (Ventura, Sonoma, Sequoia)",
+                metaArch: "✓ M1 / M2 / M3 / M4 & Intel Uyumlu",
+                metaSparkle: "✓ Sparkle 2 Otomatik Güncellemeleri",
+                mockupHeading: "Apple Standartlarında IPTV",
+                mockupDesc: "Elektronik Program Rehberi (EPG), 4'lü Çoklu Ekran ve Akıllı Otomatik Yeniden Bağlanma.",
+                featHeaderTitle: "Ödün Vermeyen macOS Mimarisi",
+                featHeaderSub: "Web teknolojileri değil, donanım seviyesinde çalışan yerel Apple teknolojileri.",
+                card1Title: "Metal & VideoToolbox",
+                card1Desc: "4K 60fps HDR ve HEVC akışları GPU üzerinde donanımsal olarak çözülür. Pil tasarrufu ve sıfır fan gürültüsü sağlar.",
+                card2Title: "Çoklu Ekran (Multi-View)",
+                card2Desc: "Aynı anda 2 veya 4 canlı yayını yan yana izleyin. Maçlar ve haberler için tek tıkla ses odak değişimi yapın.",
+                card3Title: "Akıllı EPG TV Rehberi",
+                card3Desc: "Kanal logoları, canlı yayın akışı, ilerleme çubukları ve sıradaki program bilgisiyle Apple TV tarzı kılavuz.",
+                card4Title: "Keychain & Ebeveyn PIN",
+                card4Desc: "Xtream hesap şifreleriniz Apple Keychain donanım şifrelemesiyle saklanır. Yetişkin kategoriler 4 haneli PIN ile korunur.",
+                card5Title: "Türkçe & İngilizce Destek",
+                card5Desc: "Uygulama genelinde macOS sistem diline tam uyumlu ya da elle seçilebilir iki dilli mimari.",
+                card6Title: "Sparkle Otomatik Güncelleme",
+                card6Desc: "Endüstri standardı Ed25519 şifreli Sparkle 2 motoru ile en yeni sürümler tek tıkla arka planda yüklenir.",
+                footerCopy: "© 2026 OnCue Player. Tüm hakları saklıdır. macOS için gururla geliştirilmiştir.",
+                footerDisclaimer: "Yasal Uyarı: OnCue hiçbir medya içeriği barındırmaz veya yayınlamaz. Kullanıcılar kendi yasal Xtream Codes veya M3U abonelik bilgileriyle bağlanırlar."
+            }
+        };
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            const dict = i18n[lang] || i18n.en;
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+            localStorage.setItem('oncue_lang', lang);
+        }
+
+        // Initialize language
+        (function() {
+            const saved = localStorage.getItem('oncue_lang');
+            if (saved === 'tr' || saved === 'en') {
+                setLanguage(saved);
+            } else {
+                const browserLang = (navigator.language || 'en').toLowerCase();
+                setLanguage(browserLang.startsWith('tr') ? 'tr' : 'en');
+            }
+        })();
+    </script>
 </body>
 </html>
-

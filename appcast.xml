@@ -1,24 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
-        <title>OnCue Güncellemeleri</title>
+        <title>OnCue Updates</title>
         <link>https://github.com/bugragormus/OnCue-Releases</link>
-        <description>OnCue için en yeni kararlı sürümler ve güncellemeler.</description>
-        <language>tr</language>
+        <description>Latest stable releases and updates for OnCue.</description>
+        <language>en</language>
         <item>
             <title>OnCue 1.0.0</title>
-            <pubDate>Mon, 09 Nov 2026 01:52:54 +0000</pubDate>
+            <pubDate>Mon, 09 Nov 2026 01:45:00 +0000</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.0.0 Sürüm Notları</h2>
+                <h2>OnCue 1.0.0 Release Notes</h2>
                 <ul>
-                    <li>Modern, yerel macOS SwiftUI ve AVKit oynatıcı motoru</li>
-                    <li>IPTV Canlı Yayın, Film ve Dizi akışı</li>
-                    <li>Akıllı EPG TV Rehberi ve Hızlı Kanal Geçişi</li>
-                    <li>Türkçe ve İngilizce tam yerelleştirme desteği</li>
-                    <li>Apple Silicon (M1/M2/M3/M4) ve Intel Universal 2 uyumluluğu</li>
+                    <li>Native macOS architecture built with Swift, SwiftUI and Apple AVKit</li>
+                    <li>IPTV Live Stream, Movies and Series playback</li>
+                    <li>Interactive EPG TV Guide and fast channel switching</li>
+                    <li>Multi-View (Dual & Quad Screen) simultaneous player</li>
+                    <li>Encrypted hardware credential storage via Apple Keychain</li>
+                    <li>Full English & Turkish localization support</li>
+                    <li>Universal 2: Native on Apple Silicon (M1/M2/M3/M4) & Intel Macs</li>
                 </ul>
             ]]></description>
             <enclosure
