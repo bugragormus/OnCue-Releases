@@ -6,17 +6,22 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.0.0</title>
-            <pubDate>Mon, 09 Nov 2026 02:25:31 +0000</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <title>OnCue 1.1.0</title>
+            <pubDate>Mon, 09 Nov 2026 10:20:14 +0000</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.0.0 Release Notes</h2>
+                <h2>OnCue 1.1.0 Release Notes</h2>
                 <ul>
-                    <li>Native macOS architecture built with Swift, SwiftUI and Apple AVKit</li>
-                    <li>IPTV Live Stream, Movies and Series playback</li>
-                    <li>Interactive EPG TV Guide and fast channel switching</li>
+                    <li>Audio & Subtitle Lip-Sync Delay Adjustment (+/- 0.5s)</li>
+                    <li>Smart IMDb Rating & Release Year Filters for Movies and Series</li>
+                    <li>VOD Offline Download Engine for Movies & Series episodes</li>
+                    <li>macOS Media Center & Keyboard Media Keys Integration (Now Playing)</li>
+                    <li>Instant Highlight Clip & Animated GIF Exporter (C shortcut)</li>
+                    <li>Apple AirPods Spatial Audio (Uzamsal Ses) Support</li>
+                    <li>Cinematic Real-time Ambilight Glow Lighting Effect</li>
+                    <li>Native Picture-in-Picture (PiP) and lossless DVR recording</li>
                     <li>Multi-View (Dual & Quad Screen) simultaneous player</li>
                     <li>Encrypted hardware credential storage via Apple Keychain</li>
                     <li>Full English & Turkish localization support</li>
@@ -24,10 +29,10 @@
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.0.0/OnCue.dmg"
-                length="7568626"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.1.0/OnCue.dmg"
+                length="7866509"
                 type="application/octet-stream"
-                sparkle:edSignature="SbOQc2BefKmHe/evJ/Jo0Fd7peS9Y9rVrVAUeoWJfYEYEdPsvI2O3wTLxXzRKRTH2tBArBUhhzCac3mEZXatCw==" />
+                sparkle:edSignature="42iihSa4kl18WgtjCpKsHg5B4CeLkH7W+QtmdHbp7NCdRg754OhIuv3ICOMBwU3Q7Eq7KEbAU3mHPdlIFB7HCA==" />
         </item>
     </channel>
 </rss>
