@@ -6,17 +6,18 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.2.2</title>
-            <pubDate>Mon, 09 Nov 2026 12:06:18 +0000</pubDate>
-            <sparkle:version>5</sparkle:version>
-            <sparkle:shortVersionString>1.2.2</sparkle:shortVersionString>
+            <title>OnCue 1.2.3</title>
+            <pubDate>Mon, 09 Nov 2026 12:35:36 +0000</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.2.2 Release Notes</h2>
+                <h2>OnCue 1.2.3 Release Notes</h2>
                 <ul>
-                    <li>100% Native Playback Engine: Automatic VideoToolbox GPU transcoding for MPEG-2, VC-1 and raw satellite feeds</li>
-                    <li>Auto Video Track Recovery: Zero black-screen issues for streams with segmented video tracks</li>
-                    <li>AppKit Native Layer-Backing Fix: Optimized Metal/AVPlayerLayer rendering pipeline</li>
+                    <li>Fixed ATV RAW and HEVC/H.265 streams: Automatic hardware GPU transcoding for HEVC in MPEG-TS</li>
+                    <li>Full support for all RAW and 50 FPS satellite feeds without black screen or audio-only drops</li>
+                    <li>Sub-second HLS segment generation with VideoToolbox hardware acceleration</li>
+                    <li>100% Native Playback Engine: Zero external player requirements</li>
                     <li>Smart Audio-Only & Live Radio Station Detection with Animated Equalizer Visualizer</li>
                     <li>YouTube Official Trailer Modal with instant Safari companion fallback</li>
                     <li>Multi-Account Management & Zero-interruption Auto-Failover Backup Engine</li>
@@ -31,10 +32,10 @@
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.2/OnCue.dmg"
-                length="8156359"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.3/OnCue.dmg"
+                length="8169114"
                 type="application/octet-stream"
-                sparkle:edSignature="YeJvky9Xez+z6QUoCJesVw+QG/pD6qs9rBPsAVTSxGqxTzlIZUgevmNj4osqY8ICvJFrK+xcNhxggtueg0+iBQ==" />
+                sparkle:edSignature="dyT9Bm8u8BhMYJOdgAyIhNvxAJ7EYx6ocfMzvpOsMrkVwwuvBc1Zrg2a439KuB2QBt35ZlBUcvUAipYJ0HnmAA==" />
         </item>
     </channel>
 </rss>
