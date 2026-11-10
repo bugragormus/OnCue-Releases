@@ -6,13 +6,13 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.2.8</title>
-            <pubDate>Tue, 10 Nov 2026 21:40:45 +0000</pubDate>
+            <title>OnCue 1.0.0</title>
+            <pubDate>Tue, 10 Nov 2026 21:44:56 +0000</pubDate>
             <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>1.2.8</sparkle:shortVersionString>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.2.8 Release Notes</h2>
+                <h2>OnCue 1.0.0 Release Notes</h2>
                 <ul>
                     <li>Evrensel PiP (Resim İçinde Resim): Hem macOS hem iOS/iPadOS cihazlarda MPV ve AVKit modlarında sorunsuz PiP desteği.</li>
                     <li>Pürüzsüz Tam Ekran (macOS): Tam ekrana giriş/çıkışta MoltenVK katman donmaları ve pencere kayması tamamen giderildi.</li>
@@ -22,10 +22,10 @@
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.8/OnCue.dmg"
-                length="41150588"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.0.0/OnCue.dmg"
+                length="41150538"
                 type="application/octet-stream"
-                sparkle:edSignature="rr5xTKM/iB9eJ7AcAryahsBlFoiWnlP5Szwpt0/yhXeIYir5PN/Mzbasalyn+aankjY+nM2Q0yHAM5uYruZGBQ==" />
+                sparkle:edSignature="0zlhePLUmHCtsmvgyg4TRKj6sXALqitL5V4x0315hC7nhlw8wGNIfEeLo2a/jbQkSWlFJz5dliP3ZSUETuiYAw==" />
         </item>
     </channel>
 </rss>
