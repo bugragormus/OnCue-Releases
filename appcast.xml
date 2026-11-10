@@ -6,33 +6,28 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.2.5</title>
-            <pubDate>Tue, 10 Nov 2026 16:12:29 +0000</pubDate>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>1.2.5</sparkle:shortVersionString>
+            <title>OnCue 1.2.6</title>
+            <pubDate>Tue, 10 Nov 2026 16:59:31 +0000</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.2.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.2.5 Release Notes</h2>
+                <h2>OnCue 1.2.6 Release Notes</h2>
                 <ul>
-                    <li>Akıllı Çoklu Dil & Altyazı Hafızası: Ayarlardan seçtiğiniz veya oynatırken belirlediğiniz ses ve altyazı dilleri kalıcı olarak hatırlanır, tüm içeriklerde otomatik eşleştirilir.</li>
-                    <li>MacBook Touch Bar Desteği: Oynatıcı kontrolleri (Oynat/Duraklat, 10s Geri/İleri, Canlı Yayına Git, Sessiz, En-Boy Oranı) doğrudan Touch Bar üzerinde interaktif olarak çalışır.</li>
-                    <li>İlerleme Çubuğu Canlı Küçük Resim (Thumbnail) Önizleme: Süre çubuğu üzerinde imleç ile gezinirken anlık video karesi görseli yüksek çözünürlükle gösterilir.</li>
-                    <li>Gelişmiş Ebeveyn Koruması (Görünmezlik / Stealth Modu): Kilitli kategoriler aramalarda ve listelerde tamamen gizlenir, PIN girilmedikçe varlığı belli olmaz.</li>
-                    <li>Özel Çalma Listesi & Kanal Sıralama: Canlı yayın kartlarına sağ tıklayarak kanalları en başa, yukarı veya aşağı taşıyabilir, 'Özel Sıralamam' seçeneğiyle kendi favori kanal diziliminizi oluşturabilirsiniz.</li>
-                    <li>Kusursuz VOD Desteği: Tüm Dizi ve Filmlerde (MKV, AVI, TS, MP4) 'Yükleniyor' takılmasını gideren EVENT HLS motoru</li>
-                    <li>Akıllı Tampon & Watchdog: Uzak IPTV sunucularındaki VOD dosyaları için optimize edilmiş 25 sn zaman aşımı ve 6 sn segment bekleme</li>
-                    <li>Gelişmiş Canlı Yayın Video Kurtarma: AVPlayerLayer isReadyForDisplay ile uydu H.264/HEVC yayınlarında ses var görüntü yok sorununa anında otomatik GPU çözümü</li>
-                    <li>Sıfır Harici Oynatıcı Bağımlılığı: VLC veya başka hiçbir araca gerek kalmadan %100 yerel ve dahili macOS sinema deneyimi</li>
-                    <li>YouTube Resmi Fragman Modalı: Dahili Safari önizleme köprüsü</li>
-                    <li>Çoklu Hesap & Otomatik Kesintisiz Yedek Sunucu (Failover)</li>
-                    <li>Universal 2: Apple Silicon (M1/M2/M3/M4) ve Intel Mac'lerde tam yerel performans</li>
+                    <li>Yeni OnCue Metal &amp; VideoToolbox Motoru (Libmpv + MoltenVK): Tüm canlı yayınlar (ATV RAW dahil interlaced yayınlar) ve tüm dizi/filmler (MKV, AVI, TS, MP4, DTS, AC3) artık hiçbir ek araca gerek kalmadan &lt; 1 saniyede hem ses hem görüntü ile kusursuz açılır.</li>
+                    <li>Canlı Scrubber Önizleme Düzeltmesi: İlerleme çubuğu üzerindeki video kare önizlemesinin alt çubuk tarafından kırpılma sorunu tamamen çözüldü; artık videonun ve kontrol çubuğunun üstünde net şekilde görünür.</li>
+                    <li>Özel Çalma Listeleri (Custom Playlists): Sol kenar çubuğundan dilediğiniz kadar özel liste ('Maçlarım', 'Favori Diziler') oluşturup içerikleri sağ tıkla tek tıkla ekleyebilirsiniz.</li>
+                    <li>Görsel Kanal Sıralama Modu &amp; Sürükle-Bırak: Canlı TV üst çubuğundaki 'Oklarla Sırala' ve 'Sürükle &amp; Bırak' butonlarıyla kanallarınızı fareyle sürükleyerek kolayca dizebilirsiniz.</li>
+                    <li>Uygulama İçi Özellik &amp; Kullanım Rehberi (Guide): Sol menüden tek tıkla açılan aranabilir rehber ile OnCue'nun tüm gizli ve profesyonel özelliklerini keşfedin.</li>
+                    <li>Gerçek Zamanlı Dudak Senkronu (+/- 0.5sn Ses ve Altyazı Gecikme Ayarı): Metal MPV motoru üzerinden canlı senkronizasyon.</li>
+                    <li>Universal 2: Apple Silicon (M1/M2/M3/M4) ve Intel Mac'lerde tam yerel performans.</li>
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.5/OnCue.dmg"
-                length="8268367"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.6/OnCue.dmg"
+                length="40259414"
                 type="application/octet-stream"
-                sparkle:edSignature="yteJedE5E3IkSsNU3H3jgEeE/et29SOIeR0pyGHeoghS55vC2OTXcVkKlzC2j9B7UevikJJByaafsiuk7Lc9AA==" />
+                sparkle:edSignature="YCllR6WKwcJMkSbe37dL5QQweXZ4N2amTIrXxnEye2BJHHi12Mm1VCnOBs0307Uq94vpWTK0fL1ADkgDPmeuAg==" />
         </item>
     </channel>
 </rss>
