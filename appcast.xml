@@ -6,36 +6,33 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.2.4</title>
-            <pubDate>Tue, 10 Nov 2026 15:42:35 +0000</pubDate>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
+            <title>OnCue 1.2.5</title>
+            <pubDate>Tue, 10 Nov 2026 16:12:29 +0000</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>1.2.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.2.4 Release Notes</h2>
+                <h2>OnCue 1.2.5 Release Notes</h2>
                 <ul>
+                    <li>Akıllı Çoklu Dil & Altyazı Hafızası: Ayarlardan seçtiğiniz veya oynatırken belirlediğiniz ses ve altyazı dilleri kalıcı olarak hatırlanır, tüm içeriklerde otomatik eşleştirilir.</li>
+                    <li>MacBook Touch Bar Desteği: Oynatıcı kontrolleri (Oynat/Duraklat, 10s Geri/İleri, Canlı Yayına Git, Sessiz, En-Boy Oranı) doğrudan Touch Bar üzerinde interaktif olarak çalışır.</li>
+                    <li>İlerleme Çubuğu Canlı Küçük Resim (Thumbnail) Önizleme: Süre çubuğu üzerinde imleç ile gezinirken anlık video karesi görseli yüksek çözünürlükle gösterilir.</li>
+                    <li>Gelişmiş Ebeveyn Koruması (Görünmezlik / Stealth Modu): Kilitli kategoriler aramalarda ve listelerde tamamen gizlenir, PIN girilmedikçe varlığı belli olmaz.</li>
+                    <li>Özel Çalma Listesi & Kanal Sıralama: Canlı yayın kartlarına sağ tıklayarak kanalları en başa, yukarı veya aşağı taşıyabilir, 'Özel Sıralamam' seçeneğiyle kendi favori kanal diziliminizi oluşturabilirsiniz.</li>
                     <li>Kusursuz VOD Desteği: Tüm Dizi ve Filmlerde (MKV, AVI, TS, MP4) 'Yükleniyor' takılmasını gideren EVENT HLS motoru</li>
                     <li>Akıllı Tampon & Watchdog: Uzak IPTV sunucularındaki VOD dosyaları için optimize edilmiş 25 sn zaman aşımı ve 6 sn segment bekleme</li>
                     <li>Gelişmiş Canlı Yayın Video Kurtarma: AVPlayerLayer isReadyForDisplay ile uydu H.264/HEVC yayınlarında ses var görüntü yok sorununa anında otomatik GPU çözümü</li>
                     <li>Sıfır Harici Oynatıcı Bağımlılığı: VLC veya başka hiçbir araca gerek kalmadan %100 yerel ve dahili macOS sinema deneyimi</li>
-                    <li>Akıllı Ses ve Radyo Ayrımı: Saf radyo/ses kanallarında dinamik ekolayzer görselleştiricisi</li>
                     <li>YouTube Resmi Fragman Modalı: Dahili Safari önizleme köprüsü</li>
                     <li>Çoklu Hesap & Otomatik Kesintisiz Yedek Sunucu (Failover)</li>
-                    <li>Ses / Altyazı Dudak Senkronu (+/- 0.5s hassas ayar)</li>
-                    <li>Akıllı IMDb & Çıkış Yılı Filtreleri</li>
-                    <li>VOD Çevrimdışı İndirme Motoru (Offline Downloads)</li>
-                    <li>macOS Media Center & Medya Tuşları Entegrasyonu</li>
-                    <li>Tek Tıkla 'Anı / Golü Yakala' GIF & Video Dışa Aktarıcı (C kısayolu)</li>
-                    <li>Apple AirPods Uzamsal Ses (Spatial Audio) Desteği</li>
-                    <li>Ambient Sinematik Işıklandırma (Ambilight Glow)</li>
                     <li>Universal 2: Apple Silicon (M1/M2/M3/M4) ve Intel Mac'lerde tam yerel performans</li>
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.4/OnCue.dmg"
-                length="8163059"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.5/OnCue.dmg"
+                length="8268367"
                 type="application/octet-stream"
-                sparkle:edSignature="lBAZFj+wsXUDD2E9fsBcTg6O2REP6EWWc7f/2ErHMtWhXo5dg9BE7z2UBWzdfqQfeO01/u5tcVeE7WSvmnd6CQ==" />
+                sparkle:edSignature="yteJedE5E3IkSsNU3H3jgEeE/et29SOIeR0pyGHeoghS55vC2OTXcVkKlzC2j9B7UevikJJByaafsiuk7Lc9AA==" />
         </item>
     </channel>
 </rss>
