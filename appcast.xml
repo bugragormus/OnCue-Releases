@@ -23,9 +23,9 @@
             ]]></description>
             <enclosure
                 url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.0.0/OnCue.dmg"
-                length="40443200"
+                length="40540782"
                 type="application/octet-stream"
-                sparkle:edSignature="/8LJjgrJLe8237H1xVp5jaY11O32TvPMZjJOmL7sBoJPt6ep3MuLyFo94A41MByKU17R5drprmlaelIJNKzKDQ==" />
+                sparkle:edSignature="4b0VYZc7n55lWumuU2ZuqzB9DUVGeRUPVbjtWQXjI/15zW99rQm67To9OCyaiN0kgjPaKZgGmmqEWkvLwWNLCw==" />
         </item>
     </channel>
 </rss>
