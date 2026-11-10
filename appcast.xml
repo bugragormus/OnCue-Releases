@@ -6,36 +6,36 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.2.3</title>
-            <pubDate>Mon, 09 Nov 2026 12:35:36 +0000</pubDate>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>1.2.3</sparkle:shortVersionString>
+            <title>OnCue 1.2.4</title>
+            <pubDate>Tue, 10 Nov 2026 15:42:35 +0000</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.2.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.2.3 Release Notes</h2>
+                <h2>OnCue 1.2.4 Release Notes</h2>
                 <ul>
-                    <li>Fixed ATV RAW and HEVC/H.265 streams: Automatic hardware GPU transcoding for HEVC in MPEG-TS</li>
-                    <li>Full support for all RAW and 50 FPS satellite feeds without black screen or audio-only drops</li>
-                    <li>Sub-second HLS segment generation with VideoToolbox hardware acceleration</li>
-                    <li>100% Native Playback Engine: Zero external player requirements</li>
-                    <li>Smart Audio-Only & Live Radio Station Detection with Animated Equalizer Visualizer</li>
-                    <li>YouTube Official Trailer Modal with instant Safari companion fallback</li>
-                    <li>Multi-Account Management & Zero-interruption Auto-Failover Backup Engine</li>
-                    <li>Audio & Subtitle Lip-Sync Delay Adjustment (+/- 0.5s)</li>
-                    <li>Smart IMDb Rating & Release Year Filters for Movies and Series</li>
-                    <li>VOD Offline Download Engine for Movies & Series episodes</li>
-                    <li>macOS Media Center & Keyboard Media Keys Integration (Now Playing)</li>
-                    <li>Instant Highlight Clip & Animated GIF Exporter (C shortcut)</li>
-                    <li>Apple AirPods Spatial Audio (Uzamsal Ses) Support</li>
-                    <li>Cinematic Real-time Ambilight Glow Lighting Effect</li>
-                    <li>Universal 2: Native on Apple Silicon (M1/M2/M3/M4) & Intel Macs</li>
+                    <li>Kusursuz VOD Desteği: Tüm Dizi ve Filmlerde (MKV, AVI, TS, MP4) 'Yükleniyor' takılmasını gideren EVENT HLS motoru</li>
+                    <li>Akıllı Tampon & Watchdog: Uzak IPTV sunucularındaki VOD dosyaları için optimize edilmiş 25 sn zaman aşımı ve 6 sn segment bekleme</li>
+                    <li>Gelişmiş Canlı Yayın Video Kurtarma: AVPlayerLayer isReadyForDisplay ile uydu H.264/HEVC yayınlarında ses var görüntü yok sorununa anında otomatik GPU çözümü</li>
+                    <li>Sıfır Harici Oynatıcı Bağımlılığı: VLC veya başka hiçbir araca gerek kalmadan %100 yerel ve dahili macOS sinema deneyimi</li>
+                    <li>Akıllı Ses ve Radyo Ayrımı: Saf radyo/ses kanallarında dinamik ekolayzer görselleştiricisi</li>
+                    <li>YouTube Resmi Fragman Modalı: Dahili Safari önizleme köprüsü</li>
+                    <li>Çoklu Hesap & Otomatik Kesintisiz Yedek Sunucu (Failover)</li>
+                    <li>Ses / Altyazı Dudak Senkronu (+/- 0.5s hassas ayar)</li>
+                    <li>Akıllı IMDb & Çıkış Yılı Filtreleri</li>
+                    <li>VOD Çevrimdışı İndirme Motoru (Offline Downloads)</li>
+                    <li>macOS Media Center & Medya Tuşları Entegrasyonu</li>
+                    <li>Tek Tıkla 'Anı / Golü Yakala' GIF & Video Dışa Aktarıcı (C kısayolu)</li>
+                    <li>Apple AirPods Uzamsal Ses (Spatial Audio) Desteği</li>
+                    <li>Ambient Sinematik Işıklandırma (Ambilight Glow)</li>
+                    <li>Universal 2: Apple Silicon (M1/M2/M3/M4) ve Intel Mac'lerde tam yerel performans</li>
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.3/OnCue.dmg"
-                length="8169114"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.4/OnCue.dmg"
+                length="8163059"
                 type="application/octet-stream"
-                sparkle:edSignature="dyT9Bm8u8BhMYJOdgAyIhNvxAJ7EYx6ocfMzvpOsMrkVwwuvBc1Zrg2a439KuB2QBt35ZlBUcvUAipYJ0HnmAA==" />
+                sparkle:edSignature="lBAZFj+wsXUDD2E9fsBcTg6O2REP6EWWc7f/2ErHMtWhXo5dg9BE7z2UBWzdfqQfeO01/u5tcVeE7WSvmnd6CQ==" />
         </item>
     </channel>
 </rss>
