@@ -7,7 +7,7 @@
         <language>en</language>
         <item>
             <title>OnCue 1.2.7</title>
-            <pubDate>Tue, 10 Nov 2026 17:10:34 +0000</pubDate>
+            <pubDate>Tue, 10 Nov 2026 17:13:11 +0000</pubDate>
             <sparkle:version>10</sparkle:version>
             <sparkle:shortVersionString>1.2.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
@@ -23,9 +23,9 @@
             ]]></description>
             <enclosure
                 url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.7/OnCue.dmg"
-                length="40277789"
+                length="40277350"
                 type="application/octet-stream"
-                sparkle:edSignature="7RjHmSFYgzxaqEb/L0O2nkLzulS2tlww71Rb88z+Vo686BGwBXNs5ZCjko0Xfdg+9LiZRLceKJAWKCTwDRsUBA==" />
+                sparkle:edSignature="7XhEVEkCBULQr15SV9jXjQ3yW82obD+0scetyibFHXbZeGXSfiwFd4nm6ZpFdxB0mpVR9TtZyAmzpwN2SDx6BQ==" />
         </item>
     </channel>
 </rss>
