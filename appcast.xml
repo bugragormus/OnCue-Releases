@@ -6,26 +6,26 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.0.0</title>
-            <pubDate>Tue, 10 Nov 2026 17:58:12 +0000</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <title>OnCue 1.2.8</title>
+            <pubDate>Tue, 10 Nov 2026 21:40:45 +0000</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>1.2.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.0.0 Release Notes</h2>
+                <h2>OnCue 1.2.8 Release Notes</h2>
                 <ul>
-                    <li>Sıfır Donma &amp; Kesintisiz Metal Motoru: Tüm MPV / FFmpeg / MoltenVK video işlemleri ana UI iş parçacığından tamamen ayrı özel arka plan kuyruğuna taşındı; yayın açarken arayüzün kilitlenme sorunu %100 giderildi.</li>
-                    <li>Anında Canlı Yayın &amp; VOD Açılışı: Canlı TV (ATV RAW dahil 1080i interlaced yayınlar) ve tüm film/diziler (MKV, AVI, TS, MP4, DTS, AC3) &lt; 1 saniyede hem ses hem görüntüyle başlar.</li>
-                    <li>Canlı Scrubber Önizleme: Süre çubuğu üzerindeki önizleme karesi artık kırpılmadan video ve barın üstünde görünür.</li>
-                    <li>Özel Çalma Listeleri &amp; Görsel Kanal Sıralama: Oklarla Sırala ve Sürükle-Bırak penceresiyle kolay düzenleme.</li>
-                    <li>Uygulama İçi Özellik Rehberi (Guide): Tüm gelişmiş özellikleri tek tıkla keşfedin.</li>
+                    <li>Evrensel PiP (Resim İçinde Resim): Hem macOS hem iOS/iPadOS cihazlarda MPV ve AVKit modlarında sorunsuz PiP desteği.</li>
+                    <li>Pürüzsüz Tam Ekran (macOS): Tam ekrana giriş/çıkışta MoltenVK katman donmaları ve pencere kayması tamamen giderildi.</li>
+                    <li>Akıllı Oynatıcı Kısayolları: Oynatıcı açıkken C, M, F, S ve Boşluk tuşlarının arka plan arama çubuğuna yazması engellendi.</li>
+                    <li>İzleme Listesi &amp; Kategoriler: Canlı kanallarla film/dizi kartları düzenli ayrı ızgaralara taşındı; açılışta film/dizi kategorileri otomatik yüklenir.</li>
+                    <li>Çevrimdışı İndirme Onarımı: Tamamlanan film ve dizi indirmeleri anlık olarak kalıcı diske kaydedilir.</li>
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.0.0/OnCue.dmg"
-                length="40540782"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.2.8/OnCue.dmg"
+                length="41150588"
                 type="application/octet-stream"
-                sparkle:edSignature="4b0VYZc7n55lWumuU2ZuqzB9DUVGeRUPVbjtWQXjI/15zW99rQm67To9OCyaiN0kgjPaKZgGmmqEWkvLwWNLCw==" />
+                sparkle:edSignature="rr5xTKM/iB9eJ7AcAryahsBlFoiWnlP5Szwpt0/yhXeIYir5PN/Mzbasalyn+aankjY+nM2Q0yHAM5uYruZGBQ==" />
         </item>
     </channel>
 </rss>
