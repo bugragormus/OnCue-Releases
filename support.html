@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnCue — Support & FAQ / Destek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #070709; --surface: rgba(22, 22, 26, 0.78); --border: rgba(255,255,255,0.09); --text: #fff; --muted: #8E8E93; --gold: #E5A93C; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: var(--bg); color: var(--text); font-family: 'Plus Jakarta Sans', -apple-system, sans-serif; line-height: 1.7; padding: 36px 20px 64px; }
+        .wrap { max-width: 820px; margin: 0 auto; }
+        .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; flex-wrap: wrap; gap: 12px; }
+        .brand { color: #fff; text-decoration: none; font-weight: 800; font-size: 20px; }
+        .lang-switch { display: flex; gap: 6px; }
+        .lang-btn { background: rgba(255,255,255,0.06); color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; cursor: pointer; font-weight: 700; font-size: 12px; }
+        .lang-btn.active { background: var(--gold); color: #000; border-color: var(--gold); }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 28px; margin-bottom: 18px; }
+        h1 { font-size: 30px; font-weight: 800; margin-bottom: 8px; }
+        h2 { font-size: 17px; font-weight: 700; color: var(--gold); margin-bottom: 10px; }
+        p { color: rgba(255,255,255,0.85); font-size: 14px; margin-bottom: 10px; }
+        .btn { display: inline-block; background: var(--gold); color: #000; font-weight: 700; font-size: 13px; text-decoration: none; padding: 10px 18px; border-radius: 999px; margin-top: 6px; }
+        a { color: var(--gold); }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="top">
+        <a class="brand" href="index.html">← OnCue Player</a>
+        <div class="lang-switch">
+            <button id="btn-en" class="lang-btn" onclick="setLang('en')">EN</button>
+            <button id="btn-tr" class="lang-btn" onclick="setLang('tr')">TR</button>
+        </div>
+    </div>
+
+    <div id="content-en">
+        <h1>OnCue Support</h1>
+        <div class="card">
+            <h2>Stream Playback &amp; Player Engine</h2>
+            <p>If a specific channel or movie fails to load or has out-of-sync audio, switch between <strong>OnCue Metal (MPV)</strong> and <strong>Apple Native (AVKit)</strong> in <strong>Settings → General &amp; Player</strong> or tap <strong>Switch Engine</strong> on the error screen.</p>
+        </div>
+        <div class="card">
+            <h2>Picture-in-Picture (PiP)</h2>
+            <p>VOD streams (.mp4 / .m3u8) enter PiP instantaneously. Live MPEG-TS streams may take 2–4 seconds on initial handoff while synchronizing the first keyframe segment.</p>
+        </div>
+        <div class="card">
+            <h2>Report an Issue / Contact</h2>
+            <p>Need help or want to report a bug? Open a support ticket on our official tracker and include your device model and app version.</p>
+            <a class="btn" href="https://github.com/bugragormus/OnCue-Releases/issues/new" target="_blank">Open Support Ticket</a>
+        </div>
+    </div>
+
+    <div id="content-tr" style="display:none;">
+        <h1>OnCue Destek Merkezi</h1>
+        <div class="card">
+            <h2>Yayın Oynatma ve Motor Seçimi</h2>
+            <p>Bir kanal veya film açılmıyorsa ya da ses senkronu bozuluyorsa <strong>Ayarlar → Genel &amp; Oynatıcı</strong> altından veya hata ekranındaki <strong>Motoru Değiştir</strong> seçeneğinden <strong>MPV</strong> ve <strong>AVKit</strong> arasında geçiş yapabilirsiniz.</p>
+        </div>
+        <div class="card">
+            <h2>Resim İçinde Resim (PiP)</h2>
+            <p>Dizi ve filmler anında PiP moduna geçer. Canlı yayınlarda Apple PiP katmanının ilk anahtar kareyi (keyframe) yakalaması yayıncı akışına bağlı olarak 2–4 saniye sürebilir.</p>
+        </div>
+        <div class="card">
+            <h2>Sorun Bildir / İletişim</h2>
+            <p>Yardım almak veya hata bildirmek için destek kaydı açabilir, cihaz modeliniz ile uygulama sürümünü ekleyebilirsiniz.</p>
+            <a class="btn" href="https://github.com/bugragormus/OnCue-Releases/issues/new" target="_blank">Destek Talebi Oluştur</a>
+        </div>
+    </div>
+</div>
+<script>
+function setLang(l) {
+    document.getElementById('content-en').style.display = l === 'en' ? 'block' : 'none';
+    document.getElementById('content-tr').style.display = l === 'tr' ? 'block' : 'none';
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    document.getElementById('btn-tr').classList.toggle('active', l === 'tr');
+}
+setLang((navigator.language || 'en').toLowerCase().startsWith('tr') ? 'tr' : 'en');
+</script>
+</body>
+</html>
