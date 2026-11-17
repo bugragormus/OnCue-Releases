@@ -6,13 +6,13 @@
         <description>Latest stable releases and updates for OnCue.</description>
         <language>en</language>
         <item>
-            <title>OnCue 1.0.3</title>
-            <pubDate>Tue, 17 Nov 2026 12:43:28 +0000</pubDate>
-            <sparkle:version>20</sparkle:version>
-            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <title>OnCue 1.0.4</title>
+            <pubDate>Tue, 17 Nov 2026 13:06:33 +0000</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>OnCue 1.0.3 Release Notes</h2>
+                <h2>OnCue 1.0.4 Release Notes</h2>
                 <ul>
                     <li>Pencere Boyutlandırma &amp; Tam Ekran: Pencere kenarlarından sürüklendiğinde veya tam ekran yapıldığında oynatıcı pencereyi gecikmesiz tam doldurur.</li>
                     <li>Ekran Uykusu Önleme: Video izlenirken bilgisayarın dinlenme moduna veya ekran koruyucuya geçmesi engellendi.</li>
@@ -22,10 +22,10 @@
                 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.0.3/OnCue.dmg"
-                length="42074170"
+                url="https://github.com/bugragormus/OnCue-Releases/releases/download/v1.0.4/OnCue.dmg"
+                length="42065301"
                 type="application/octet-stream"
-                sparkle:edSignature="iV03bTWC2vtYQ7nMc5RogpA4AVX0LJ1mtaKJa1srgfcHO40AGzO2lMGk57cSi+sNfCIWo+cTkXtVHCOjipWZCw==" />
+                sparkle:edSignature="DRDK1fnk9VVGvDUlkFB4lywScpsSzMzSQNi4ORbYJdi40Irxkrif6zrvovY34FZLU/oemPWvovnstvTHX+FzCw==" />
         </item>
     </channel>
 </rss>
